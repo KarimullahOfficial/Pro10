@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  position: sticky;
+  top: 0;
+}
 html {
   font-size: 62.5%;
 }
@@ -52,17 +56,15 @@ nav ul li:hover {
   transition: 0.3s ease-in-out;
 }
 .image img {
-  width: 55rem;
-  height: 53rem;
-  border-radius: 50%;
-}
-.image {
   width: 50rem;
   height: 50rem;
+  border-radius: 50%;
 }
+
 #Home {
   background-color: grey;
   padding: 4rem 0;
+  border-bottom: 4px solid blueviolet;
 }
 #Home .container {
   display: flex;
@@ -112,4 +114,17 @@ nav ul li:hover {
   50% {
     border-color: orange;
   }
+}
+#Project {
+  background-color: darkblue;
+}
+#Project h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.projectcontainer {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
