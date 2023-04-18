@@ -4,14 +4,112 @@
   padding: 0;
   box-sizing: border-box;
 }
-html body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.4;
+html {
   font-size: 62.5%;
 }
-h1 {
-  color: red;
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+  scroll-behavior: smooth;
+  color: white;
 }
-h2 {
-  color: tomato;
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+header {
+  background-color: blue;
+
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+nav li {
+  list-style: none;
+}
+.log {
+  font-size: 2rem;
+  font-weight: 700;
+}
+nav ul li:hover {
+  border-bottom: 2px solid yellow;
+  transition: 0.3s ease-in-out;
+}
+.image img {
+  width: 55rem;
+  height: 53rem;
+  border-radius: 50%;
+}
+.image {
+  width: 50rem;
+  height: 50rem;
+}
+#Home {
+  background-color: grey;
+  padding: 4rem 0;
+}
+#Home .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content {
+  display: grid;
+  place-items: center;
+}
+#Home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#Home .h {
+  font-size: 6rem;
+  font-weight: bold;
+  color: yellow;
+}
+#Home .k {
+  font-size: 5rem;
+  font-weight: bold;
+}
+#Home h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 8s steps(20, end), cursor-blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes cursor-blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
