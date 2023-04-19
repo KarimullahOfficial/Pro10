@@ -61,34 +61,34 @@ nav ul li:hover {
   border-radius: 50%;
 }
 
-#Home {
+#home {
   background-color: grey;
   padding: 4rem 0;
   border-bottom: 4px solid blueviolet;
 }
-#Home .container {
+#home .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.content {
+.contentmy {
   display: grid;
   place-items: center;
 }
-#Home h1 {
+#home h1 {
   font-size: 3rem;
   font-weight: bold;
 }
-#Home .h {
+#home .h {
   font-size: 6rem;
   font-weight: bold;
   color: yellow;
 }
-#Home .k {
+#home .k {
   font-size: 5rem;
   font-weight: bold;
 }
-#Home h2 {
+#home h2 {
   font-size: 4rem;
   font-weight: bold;
   overflow: hidden;
@@ -115,10 +115,10 @@ nav ul li:hover {
     border-color: orange;
   }
 }
-#Project {
+#project {
   background-color: darkblue;
 }
-#Project h2 {
+#project h2 {
   font-size: 4rem;
   text-align: center;
   margin: 2rem 0;
@@ -127,4 +127,51 @@ nav ul li:hover {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.card img {
+  height: 1000px;
+  width: 320px;
+}
+.griditem {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+.card {
+  width: 320;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  transform: translateY(100px);
+}
+.card :hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.card :hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.content :hover {
+  background-color: white;
+  color: darkblue;
+  transform: translateY(0px);
+}
+.content h3 {
+  text-align: center;
+}
+.content {
+  padding: 2rem;
+  position: relative;
+  top: -5.5rem;
+  margin-bottom: -5.5rem;
+
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
 }
