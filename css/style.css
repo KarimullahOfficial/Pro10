@@ -117,6 +117,7 @@ nav ul li:hover {
 }
 #project {
   background-color: darkblue;
+  height: 140rem;
 }
 #project h2 {
   font-size: 4rem;
@@ -130,7 +131,7 @@ nav ul li:hover {
   gap: 2rem;
 }
 .card img {
-  height: 1000px;
+  height: 380px;
   width: 320px;
 }
 .griditem {
@@ -174,4 +175,48 @@ nav ul li:hover {
   font-size: 2rem;
   font-weight: bold;
   transition: 0.3s ease-in-out;
+}
+.icon {
+  color: black;
+}
+#contact {
+  background-color: grey;
+  color: white;
+}
+#contact h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+#contact .container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.topcontact {
+  display: flex;
+  margin: 0 auto;
+  gap: 4rem;
+}
+.botom {
+  display: flex;
+  gap: 4rem;
+}
+.icon i {
+  font-size: 2rem;
+  color: white;
+}
+.icon h3 {
+  font-size: 2rem;
+  color: white;
+}
+footer {
+  background-color: blueviolet;
+  padding: 2rem 0;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
 }
