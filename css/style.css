@@ -56,8 +56,6 @@ nav ul li:hover {
   transition: 0.3s ease-in-out;
 }
 .image img {
-  width: 50rem;
-  height: 50rem;
   border-radius: 50%;
 }
 
