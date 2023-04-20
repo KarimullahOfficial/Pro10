@@ -117,7 +117,7 @@ nav ul li:hover {
 }
 #project {
   background-color: darkblue;
-  height: 100rem;
+  height: auto;
 }
 #project h2 {
   font-size: 4rem;
